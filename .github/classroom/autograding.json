@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Oblig2 test",
+      "setup": "",
+      "run": "gradle test --tests no.oslomet.cs.algdat.Oblig2.Oblig2Test.*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
