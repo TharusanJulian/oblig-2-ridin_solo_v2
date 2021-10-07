@@ -102,12 +102,10 @@ public class DobbeltLenketListe<T> implements Liste<T> {
     public boolean leggInn(T verdi) {
         Objects.requireNonNull(verdi,"Null verdi");
 
-        if (antall == 0)
-        {
+        if (antall == 0) {
             hode = hale = new Node<>(verdi, null, null);
         }
-        else
-        {
+        else {
             hale = hale.neste = new Node<>(verdi, hale, null);
         }
 
@@ -173,12 +171,10 @@ public class DobbeltLenketListe<T> implements Liste<T> {
         StringBuilder s = new StringBuilder();
         s.append('[');
 
-        if (!tom())
-        {
+        if (!tom()) {
             s.append(hode.verdi);
 
-            for (Node<T> p = hode.neste; p != null; p = p.neste)
-            {
+            for (Node<T> p = hode.neste; p != null; p = p.neste) {
                 s.append(',').append(' ').append(p.verdi);
             }
         }
@@ -191,14 +187,12 @@ public class DobbeltLenketListe<T> implements Liste<T> {
         StringBuilder s = new StringBuilder();
         s.append('[');
 
-        if (!tom())
-        {
+        if (!tom()) {
             s.append(hale.verdi);
 
             for (Node<T> p = hale.forrige; p != null; p = p.forrige)
             {
-                s.append
-                        (',').append(' ').append(p.verdi);
+                s.append(',').append(' ').append(p.verdi);
             }
         }
 
