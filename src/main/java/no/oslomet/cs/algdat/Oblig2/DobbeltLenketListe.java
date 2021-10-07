@@ -90,12 +90,12 @@ public class DobbeltLenketListe<T> implements Liste<T> {
 
     @Override
     public int antall() {
-        return  antall;
+        return antall;
     }
 
     @Override
     public boolean tom() {
-        return  antall == 0;
+        return antall == 0;
     }
 
     @Override
@@ -117,7 +117,36 @@ public class DobbeltLenketListe<T> implements Liste<T> {
 
     @Override
     public void leggInn(int indeks, T verdi) {
-        throw new UnsupportedOperationException();
+        Objects.requireNonNull(verdi,"Null verdi");
+        if (indeks < 0)
+        {
+            throw new IndexOutOfBoundsException("Indeksen " +
+                    indeks + " er negativ");
+        }
+        else if (indeks > antall)
+        {
+            throw new IndexOutOfBoundsException("Indeksen " +
+                    indeks + " > antall(" + antall + ")noder");
+        }
+        else if (antall == 0)  // returnerer en tom liste
+        {
+            hode = hale = new Node<>(verdi, null, null);
+        }
+        else if (indeks == 0) //verdien skal legges først
+        {
+            hode = hode.forrige = new Node<>(verdi, null, hode);
+        }
+        else if (indeks == antall) //verdien skal legges bakkers
+        {
+            hale = hale.neste = new Node<>(verdi, hale, null);
+        }
+        else{
+            Node<T> p = finnNode(indeks);  // ny verdi til venstre for p
+            p.forrige = p.forrige.neste = new Node<>(verdi, p.forrige, p);
+        }
+
+        antall++;
+        endringer++;
     }
 
     @Override
