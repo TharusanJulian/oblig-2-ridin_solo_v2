@@ -46,12 +46,14 @@ public class DobbeltLenketListe<T> implements Liste<T> {
     public DobbeltLenketListe(T[] a) {
         this();
 
-        if (a == null){ Objects.requireNonNull("Ikke tilatt null verdier"); } // ingen verdier - tom liste
+        if (a == null){
+            //  tom liste
+            Objects.requireNonNull("Ikke tilatt null verdier");
+        }
+        //setter hode og hale sin verdi = null
+        hode = hale = new Node<>(null);
 
-        hode = hale = new Node<>(null);  // den siste noden
-
-        for (int i =0; i < a.length; i++)  // resten av verdiene
-        {
+        for (int i =0; i < a.length; i++){  // resten av verdiene
 
             if(a[i] != null) {
                 hode = new Node<>(a[i]);
@@ -62,6 +64,28 @@ public class DobbeltLenketListe<T> implements Liste<T> {
 
     public Liste<T> subliste(int fra, int til) {
         throw new UnsupportedOperationException();
+    }
+    private Node<T> finnNode(int indeks)
+    {
+        Node<T> p;
+
+        if (indeks <= antall / 2)
+        {
+            p = hode;
+            for (int i = 0; i < indeks; i++)
+            {
+                p = p.neste;
+            }
+        }
+        else
+        {
+            p = hale;
+            for (int i = antall - 1; i > indeks; i--)
+            {
+                p = p.forrige;
+            }
+        }
+        return p;
     }
 
     @Override
@@ -105,7 +129,9 @@ public class DobbeltLenketListe<T> implements Liste<T> {
 
     @Override
     public T hent(int indeks) {
-        throw new UnsupportedOperationException();
+        indeksKontroll(indeks, false);
+
+        return finnNode(indeks).verdi;
     }
 
     @Override
@@ -115,7 +141,16 @@ public class DobbeltLenketListe<T> implements Liste<T> {
 
     @Override
     public T oppdater(int indeks, T nyverdi) {
-        throw new UnsupportedOperationException();
+        indeksKontroll(indeks, false);
+        Objects.requireNonNull(nyverdi,"Null verdi");
+
+        Node<T> p = finnNode(indeks);
+
+        T gammelverdi = p.verdi;
+        p.verdi = nyverdi;
+
+        endringer++;
+        return gammelverdi;
     }
 
     @Override
