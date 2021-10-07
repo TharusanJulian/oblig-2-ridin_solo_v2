@@ -147,8 +147,7 @@ class Oblig2Test {
 
         if (liste.leggInn(1) != true) {
             antallFeil++;
-            System.out.println
-                    ("Oppgave 2a: leggInn-metoden skal returnere true her!");
+            System.out.println("Oppgave 2a: leggInn-metoden skal returnere true her!");
         }
 
         liste.leggInn(2);
