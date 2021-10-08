@@ -63,7 +63,28 @@ Begge metodene tar hensyn til spesialtillfeiller.
 feks hvis første eller siste node skal fjernes, eller om listen allerde er tom.
 
 
+Oppgave 8
+8a,
+For å løse oppgave 8a så lager jeg til metoden T next(). Og jeg sørger for at den sjekker om iteratorendringen er
+lik endringer og hvis ikke kastes en ConcurrentModificationException. Også hvis ikke det er flere igjen i listen
+kastes det NoSuchElementException. Og til slutt setter jeg fjernOK til sann. For å løse denne oppgaven tar 
+jeg inspirasjon fra kompendiet. For å være mer spesifikk programkode 3.3.4c
 
+8b
+I denne oppgavem lager jeg metoden Iterator<T> iterator. Og jeg sørger for at denne returnerer listen (instans av 
+iteratorklassen)
+
+8c
+I denne oppgaven lager jeg konstruktøren private DobbeltLenketListeIterator(int indeks). Deretter setter jeg pekeren
+denne til den tilhørende indeksen. 
+
+8d
+Lager tilslutt metoden Iterator<T> iterator (int indeks). Jeg sjekker at indeksen er lovlig. Bruker deretter
+metoden indekskontroll(). Ved hjelp fra oppgave c returneres det en instanse av iteratorklassen. 
+
+Oppgave 7 måtte fylles for at oppgave 8 skulle bestå testen. Dermed måtte jeg også gjøre oppgave 7. I denne oppgaven 
+skal man nullstille alle verdiene gjøre alle verdiene om til ingen ting. For å løse denne oppgaven bruker jeg 
+inspirasjon fra kompendiet for å være spesifikk fra oppgave 3.3.2. 
 
 
 
