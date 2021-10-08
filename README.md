@@ -19,6 +19,11 @@ variablene. For å løse denne oppgaven tar jeg inspirasjon fra kompendiet(enkel
 Denne koden returnere antall og tom sjekker om antallet = 0. 
 Hvis antall = null vil tom voiden være 0. 
 
+For å løse oppgave 2 endrer jeg først på pekerne og Objects.requirednull(altså legger til en feilmelding) 
+for null verdier. Derretter lager jeg en tostring og en omvendtstring metode. Som har i jobb å gjøre om 
+verdiene om til en string verdi som ser ut som en array. Denne string verdien skal printes som et "[1,2,3]".
+Omvendtstring gjør altså det motsatte med verdiene. Så det printes fra halen til hode så [3,2,1]-.
+
 
 
 
