@@ -14,9 +14,11 @@ I oppgaven har vi hatt følgende arbeidsfordeling:
 
 # Oppgavebeskrivelse
 
-For å løse oppgave 1 brukte jeg en for loop og en if-setning for å differensiere null verdiene og 
-variablene. For å løse denne oppgaven tar jeg inspirasjon fra kompendiet(enkeltlenkede lister(3.3)).
-Denne koden returnere antall og tom sjekker om antallet = 0. 
+Først lager metodene int antall () og boolean tom(). Og får de til å returnere antall verdier som er listen og boolean
+tom() returnerer true eller false avhengiv om de listen er tom eller ikke. Derretter lager jeg Dobbellenkedeliste(T[] a)
+. Og hvis a er null kastes det en NullPointerException medteksten"Tabellenaernull. For å løse oppgave 1 brukte jeg en 
+for loop og en while-loop for å differensiere null verdiene og variablene. For å løse denne oppgaven tar jeg inspirasjon
+fra kompendiet( oppgavene fra enkeltlenkede lister(3.3.2). Denne koden returnere antall og tom sjekker om antallet = 0. 
 Hvis antall = null vil tom voiden være 0. 
 
 For å løse oppgave 2 endrer jeg først på pekerne og Objects.requirednull(altså legger til en feilmelding) 
@@ -37,7 +39,7 @@ feil med verdiene som er gitt. For eksempel om til er mindre enn fra.
 
 Denne oppgaven strever jeg ganske mye med og har brukt utrolig lenge på å løse og det nærmeste jeg har kommet 
 til å løse er dette. Jeg bruker inspirasjon fra 3.3.3 i kompendiet. Jeg prøvde å løse oppgaven på en annen 
-metode men fikk failed gjentatte ganger. 
+metode, men fikk failed gjentatte ganger. 
 
 
 For å løse oppgave 4 må jeg finne posisjonen til variablene. Dette gjør jeg ved å lage en int indekTil
@@ -53,7 +55,7 @@ få listen [1,2,5]. Også passet på at jeg gikk igjennom sjekklisten som står 
 la til spesifikk kode(fullførte kravene). For å løse denne oppgaven tar jeg igjen inspirasjon fra 
 kompendiet. For å være spesisikk Programkode 3.3.2 g). 
 
-
+Oppgave 7
 For å løse denne oppgaven bruker jeg inspirasjon fra kompendiet. For å være spesifikk så bruker jeg 3.3.3. 
 
 Bolean fjern(T verdi) har i oppgave å fjerne noden med den oppgitte verdien og returne true. T fjern(int indeks)
