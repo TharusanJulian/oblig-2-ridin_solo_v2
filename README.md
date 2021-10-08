@@ -26,7 +26,19 @@ Omvendtstring gjør altså det motsatte med verdiene. Så det printes fra halen 
 For å løse denne oppgaven så bruker jeg inspirasjon fra kompendiet for å være spesifikk. Ukeoppgavene 
 3.3.2.
 
-Jeg er enda ikke ferdig med oppgave 3b så jeg venter med å skrive kildekodekommentar
+For å løse oppgave 3. Så lager jeg funksjonen Node<T>finnNode(intindeks). Finn noden metoden har i oppgave
+å finne verdien i et objekt. Så det du gjør er at du angir posisjonen deretter får du verdien ut. Dette gjør 
+jeg ved å lage en for løkke som går igjennom alle verdiene i objektet/arrayet. Metoden Public hent(int indeks)
+har i oppgave å hente verdien som finnNode finner. Så finnNode gir en posisjon og hent ruturnerer verdien til 
+tallet finn node har funnet. Oppdater metoden oppdaterer verdien til tallene som har blitt satt in ved
+hjelp av finnNode. Jeg lager en subliste som har i oppgave å ta funksjonene fra et tall som er gitt og til 
+et tall som er gitt. Begge to er gitt for at det skal fungere. Fratilkontrollen sjekker om det ikke er noe 
+feil med verdiene som er gitt. For eksempel om til er mindre enn fra. 
+
+Denne oppgaven strever jeg ganske mye med og har brukt utrolig lenge på å løse og det nærmeste jeg har kommet 
+til å løse er dette. Jeg bruker inspirasjon fra 3.3.3 i kompendiet. Jeg prøvde å løse oppgaven på en annen 
+metode men fikk failed gjentatte ganger. 
+
 
 For å løse oppgave 4 må jeg finne posisjonen til variablene. Dette gjør jeg ved å lage en int indekTil
 (T verdi). Derretter legger jeg inn en verdi og sjekker den om verdien eksisterer i tabellen. Hvis ikke 
