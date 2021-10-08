@@ -3,7 +3,7 @@
 
 Denne oppgaven er en innlevering i Algoritmer og Datastrukturer.
 Oppgaven er levert av følgende studenter:
-* Tharusan Julian, s351886, s351886@oslomet.no
+* Tharusan Julian, s351886, s351886@oslomet.no.
 
 
 # Arbeidsfordeling
