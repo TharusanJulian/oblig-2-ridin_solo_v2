@@ -34,6 +34,14 @@ tallet eksisterer i tabellen returnerer den false ved hjelp av boolean inneholde
 inneholder så returnere true hvis verdien eksisterer i tabellen. For å løse denne oppgaven tar jeg
 inspirasjon fra kompendiet. Får å være spesifikk del 3.3.3 og opgavene knyttet til den delen av kompendiet.
 
+For å løse oppgave 5 så bruker jeg funksjonen public void leggInn(int indeks, T verdi). Meningen med koden 
+er at du skal velge/gå til en posisjon du setter inn og endrer på verdien til denne posisjonen. 
+. La oss si du har rekken [1,2,3] og ønsker å endre endre posisjonen 2 og endre tallet til 5. Da vil vi
+få listen [1,2,5]. Også passet på at jeg gikk igjennom sjekklisten som står skrevet i oppgave teksten. Og 
+la til spesifikk kode(fullførte kravene). For å løse denne oppgaven tar jeg igjen inspirasjon fra 
+kompendiet. For å være spesisikk Programkode 3.3.2 g). 
+
+
 
 
 
