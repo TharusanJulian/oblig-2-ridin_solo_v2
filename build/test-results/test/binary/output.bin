@@ -1,5 +1,7 @@
 (Oppgave 10b: Ikke unntak for tom liste!
-/Oppgave 3a: Dette (2607 ms) gikk altfor sakte!
+-Oppgave 2n: Dette (49 ms) gikk altfor sakte!
+8            Har du kodet toString slik det ble bedt om?
+/Oppgave 3a: Dette (4232 ms) gikk altfor sakte!
 4            Har du kodet metoden finnNode() riktig?
 
 BOppgave 8g: ForventetAntallEndringer ikke endret i fjern(indeks)!
