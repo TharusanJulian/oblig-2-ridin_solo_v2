@@ -23,7 +23,7 @@ For å løse oppgave 2 endrer jeg først på pekerne og Objects.requirednull(alt
 for null verdier. Derretter lager jeg en tostring og en omvendtstring metode. Som har i jobb å gjøre om 
 verdiene om til en string verdi som ser ut som en array. Denne string verdien skal printes som et "[1,2,3]".
 Omvendtstring gjør altså det motsatte med verdiene. Så det printes fra halen til hode så [3,2,1]-. 
-For å løse denne oppgaven så bruker jeg inspirasjon fra kompendiet for å være spesifikk. Ukeoppgavene 
+For å løse denne oppgaven så bruker jeg inspirasjon fra kompendiet for å være spesifikk. Ukeoppgavene altså 
 3.3.2.
 
 For å løse oppgave 3. Så lager jeg funksjonen Node<T>finnNode(intindeks). Finn noden metoden har i oppgave
@@ -53,6 +53,10 @@ få listen [1,2,5]. Også passet på at jeg gikk igjennom sjekklisten som står 
 la til spesifikk kode(fullførte kravene). For å løse denne oppgaven tar jeg igjen inspirasjon fra 
 kompendiet. For å være spesisikk Programkode 3.3.2 g). 
 
+For å løse denne oppgaven bruker jeg inspirasjon fra kompendiet. For å være spesifikk så bruker jeg 3.3.3. Hvordan 
+koden fungerer er at du gir en posisjon du ønsker å fjerne med if setningen. Og for å passe på om man fjerner riktig 
+verdi har vi fått en liste med spesifikasjoner. Og for spesifikasjonene så går boolean fjern(T verdi) igjennom 
+påstandene og gir true eller false. 
 
 
 
