@@ -14,6 +14,11 @@ I oppgaven har vi hatt følgende arbeidsfordeling:
 
 # Oppgavebeskrivelse
 
-I oppgave 1 så gikk vi frem ved å ...
+For å løse oppgave 1 brukte jeg en for loop og en if-setning for å differensiere null verdiene og 
+variablene. For å løse denne oppgaven tar jeg inspirasjon fra kompendiet(enkeltlenkede lister(3.3)).
+Denne koden returnere antall og tom sjekker om antallet = 0. 
+Hvis antall = null vil tom voiden være 0. 
 
-I oppgave 2 så brukte vi en ... til å ...
+
+
+
