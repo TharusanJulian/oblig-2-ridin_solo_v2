@@ -28,6 +28,14 @@ For å løse denne oppgaven så bruker jeg inspirasjon fra kompendiet for å væ
 
 Jeg er enda ikke ferdig med oppgave 3b så jeg venter med å skrive kildekodekommentar
 
+For å løse oppgave 4 må jeg finne posisjonen til variablene. Dette gjør jeg ved å lage en int indekTil
+(T verdi). Derretter legger jeg inn en verdi og sjekker den om verdien eksisterer i tabellen. Hvis ikke 
+tallet eksisterer i tabellen returnerer den false ved hjelp av boolean inneholder(T verdi) og vis den 
+inneholder så returnere true hvis verdien eksisterer i tabellen. For å løse denne oppgaven tar jeg
+inspirasjon fra kompendiet. Får å være spesifikk del 3.3.3 og opgavene knyttet til den delen av kompendiet.
+
+
+
 
 
 
